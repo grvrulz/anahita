@@ -55,17 +55,6 @@ genesis_unregister_layout( 'content-sidebar-sidebar' );
 genesis_unregister_layout( 'sidebar-sidebar-content' );
 genesis_unregister_layout( 'sidebar-content-sidebar' );
 
-//* Hook sticky message before site header
-add_action( 'genesis_before', 'mobile_first_sticky_message' );
-function mobile_first_sticky_message() {
-
-	genesis_widget_area( 'sticky-message', array(
-		'before' => '<div class="sticky-message">',
-		'after'  => '</div>',
-	) );
-
-}
-
 //* Remove comment form allowed tags
 add_filter( 'comment_form_defaults', 'mobile_first_remove_comment_form_allowed_tags' );
 function mobile_first_remove_comment_form_allowed_tags( $defaults ) {
@@ -93,11 +82,4 @@ function mobile_first_comments_gravatar( $args ) {
 }
 
 //* Add support for 3-column footer widgets
-add_theme_support( 'genesis-footer-widgets', 3 );
-
-//* Register widget areas
-genesis_register_sidebar( array(
-	'id'          => 'sticky-message',
-	'name'        => __( 'Sticky Message', 'bg-mobile-first' ),
-	'description' => __( 'This is the sticky message widget area.', 'bg-mobile-first' ),
-) );
+add_theme_support( 'genesis-footer-widgets', 3 )
