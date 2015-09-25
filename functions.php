@@ -86,3 +86,6 @@ add_theme_support( 'genesis-footer-widgets', 3 );
 
 //* Remove Genesis site favicon
 remove_action( 'wp_head', 'genesis_load_favicon' );
+
+//* Image sizes
+add_image_size('featured', 694, 400, true);

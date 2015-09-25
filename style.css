@@ -340,7 +340,7 @@ textarea {
 	background-color: #fff;
 	border: 2px solid #e7e7e7;
 	border-radius: 3px;
-	color: #333;
+	color: #666;
 	font-size: 18px;
 	font-weight: 400;
 	padding: 16px;
@@ -361,14 +361,14 @@ input[type="radio"] {
 }
 
 ::-moz-placeholder {
-	color: #333;
+	color: #999;
 	font-weight: 400;
 	opacity: 1;
 	-webkit-font-smoothing: antialiased;
 }
 
 ::-webkit-input-placeholder {
-	color: #333;
+	color: #999;
 	font-weight: 400;
 	-webkit-font-smoothing: antialiased;
 }
@@ -419,7 +419,7 @@ input:hover[type="submit"],
 .footer-widgets input:hover[type="submit"],
 .footer-widgets .button:hover {
 	background-color: #fff;
-	color: #333;
+	color: #666;
 }
 
 .button {
@@ -827,6 +827,19 @@ img.alignright,
 
 #wpstats {
 	display: none;
+}
+
+.jetpack_subscription_widget p {
+	margin-bottom: 5px;
+}
+
+.jetpack_subscription_widget #subscribe-email input {
+	width: 100%;
+	padding: 16px;
+}
+
+.jetpack_subscription_widget input[type="submit"] {
+	width: 100%;
 }
 
 
@@ -1277,13 +1290,18 @@ p.form-submit,
 	border-top: 3px solid #e7e7e7;
 }
 
-.footer-widgets,
-.footer-widgets a {
+.footer-widgets h1,
+.footer-widgets h2,
+.footer-widgets h3,
+.footer-widgets h4,
+.footer-widgets h5,
+.footer-widgets h6 {
 	color: #fff;
 }
 
-.footer-widgets input {
-	border: 3px solid #e7e7e7;
+.footer-widgets,
+.footer-widgets a {
+	color: #fff;
 }
 
 .footer-widgets a.button,
