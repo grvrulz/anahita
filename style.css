@@ -10,7 +10,7 @@
 	Tags: pink, teal, white, one-column, two-columns, responsive-layout, custom-menu, full-width-template, sticky-post, theme-options, threaded-comments
 
 	Template: genesis
-	Template Version: 2.1.2
+	Template Version: 2.2.2
 
 	License: GPL-2.0+
 	License URI: http://www.opensource.org/licenses/gpl-license.php
@@ -836,6 +836,7 @@ img.alignright,
 .site-header {
 	background-color: #f4f4f4;
 	text-align: center;
+	border-bottom: 3px solid #e7e7e7;
 }
 
 .site-header .wrap {
@@ -972,6 +973,7 @@ img.alignright,
 	padding-bottom: 10px;
 	padding-top: 10px;
 	text-align: center;
+	border-bottom: 3px solid #e7e7e7;
 }
 
 .nav-primary .genesis-nav-menu a {
@@ -1254,6 +1256,7 @@ p.form-submit,
 	padding-left: 5%;
 	padding-right: 5%;
 	padding-top: 60px;
+	border-top: 3px solid #e7e7e7;
 }
 
 .footer-widgets,
