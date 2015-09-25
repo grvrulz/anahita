@@ -203,6 +203,7 @@ i {
 
 blockquote {
 	margin: 40px;
+	font-size: 1.1em;
 }
 
 blockquote::before {
@@ -861,7 +862,7 @@ img.alignright,
 
 .site-title {
 	font-family: 'Dancing Script', cursive;
-	font-size: 30px;
+	font-size: 32px;
 	letter-spacing: 1px;
 	margin-bottom: 0;
 }
