@@ -83,3 +83,6 @@ function mobile_first_comments_gravatar( $args ) {
 
 //* Add support for 3-column footer widgets
 add_theme_support( 'genesis-footer-widgets', 3 )
+
+//* Remove Genesis site favicon
+remove_action( 'wp_head', 'genesis_load_favicon' );
