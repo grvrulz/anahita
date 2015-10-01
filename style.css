@@ -773,14 +773,15 @@ img.alignright,
 	font-weight: 400;
 }
 
-.content .share-filled .share {
-	border-top-left-radius: 0;
-	border-bottom-left-radius: 0;
+.content .share-filled .share,
+.content .share-small .no-count .share {
+	border-top-left-radius: 4px;
+	border-bottom-left-radius: 4px;
 }
 
 .content .share-filled .count {
-	border-top-right-radius: 0;
-	border-bottom-right-radius: 0;
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 4px;
 }
 
 .content .share-filled .facebook .count,
@@ -795,8 +796,8 @@ img.alignright,
 .content .share-filled .stumbleupon .count:hover,
 .content .share-filled .twitter .count,
 .content .share-filled .twitter .count:hover {
-	color: #333;
-	border: 1px solid #333;
+	color: #999;
+	border: 1px solid #999;
 }
 
 .content .share-filled .facebook .share,
@@ -811,7 +812,7 @@ img.alignright,
 .content .share-filled .stumbleupon:hover .count,
 .content .share-filled .twitter .share,
 .content .share-filled .twitter:hover .count {
-	background: #333 !important;
+	background: #999 !important;
 }
 
 .content .share-filled .facebook:hover .count,
