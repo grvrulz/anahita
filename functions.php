@@ -58,27 +58,21 @@ genesis_unregister_layout( 'sidebar-content-sidebar' );
 //* Remove comment form allowed tags
 add_filter( 'comment_form_defaults', 'mobile_first_remove_comment_form_allowed_tags' );
 function mobile_first_remove_comment_form_allowed_tags( $defaults ) {
-
 	$defaults['comment_notes_after'] = '';
 	return $defaults;
-
 }
 
 //* Modify the size of the Gravatar in the author box
 add_filter( 'genesis_author_box_gravatar_size', 'mobile_first_author_box_gravatar' );
 function mobile_first_author_box_gravatar( $size ) {
-
 	return 160;
-
 }
 
 //* Modify the size of the Gravatar in the entry comments
 add_filter( 'genesis_comment_list_args', 'mobile_first_comments_gravatar' );
 function mobile_first_comments_gravatar( $args ) {
-
 	$args['avatar_size'] = 100;
 	return $args;
-
 }
 
 //* Add support for 3-column footer widgets
@@ -89,3 +83,10 @@ remove_action( 'wp_head', 'genesis_load_favicon' );
 
 //* Image sizes
 add_image_size('featured', 694, 400, true);
+
+//* Register widget areas
+genesis_register_sidebar( array(
+	'id'          => 'home-featured',
+	'name'        => __( 'Home Page featured', 'anahita' ),
+	'description' => __( 'This is the Home Page featured area', 'anahita' ),
+) );
