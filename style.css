@@ -843,6 +843,53 @@ img.alignright,
 	width: 100%;
 }
 
+/* Genesis Responsive Slider
+--------------------------------------------- */
+
+.anahita-home #genesis-responsive-slider {
+	border: 3px solid #e7e7e7;
+	border-radius: 8px;
+	margin: 0 auto;
+	max-width: 1600px;
+	padding: 0;
+	overflow: hidden;
+}
+
+.anahita-home .slide-excerpt {
+	background-color: #f4f4f4;
+	filter: alpha(opacity=100);
+	opacity: 1;
+	border: 3px solid #e7e7e7;
+	border-radius: 8px;
+	overflow: hidden;
+}
+
+html > body.anahita-home .slide-excerpt-border {
+	margin: 0;
+	padding: 30px 30px 12px;
+	width: 100%;
+
+}
+
+.anahita-home .slide-excerpt h2 a {
+	color: #78a7c8;
+}
+
+.anahita-home #genesis-responsive-slider .slide-excerpt h2 a:hover {
+	color: #444;
+}
+
+.anahita-home #genesis-responsive-slider .flex-control-nav {
+	margin-top: -40px;
+	text-align: left;
+}
+
+.anahita-home #genesis-responsive-slider .flex-control-nav li {
+	padding-left: 5px;
+	text-indent: 0;
+}
+
+
 
 /* Site Header
 ---------------------------------------------------------------------------------------------------- */
@@ -1073,6 +1120,57 @@ img.alignright,
 
 /* Content Area
 ---------------------------------------------------------------------------------------------------- */
+
+/* Home
+--------------------------------------------- */
+
+.home-featured {
+	position: relative;
+	text-align: center;
+	z-index: 9;
+}
+
+.home-featured .widget {
+	padding: 40px 40px 0;
+	margin: 40px auto 0;
+	max-width: 1600px;
+}
+
+.home-featured .widget:last-of-type {
+	padding-bottom: 80px;
+}
+
+.anahita-home .home-featured .widget.genesis_responsive_slider {
+	max-width: 100%;
+	padding: 0;
+}
+
+.home-featured .slide-excerpt {
+	margin: 80px 80px 120px;
+	text-align: left;
+}
+.home-featured .slide-excerpt .more-link {
+	background-color: #e7e7e7;
+	color: #FA9581;
+	display: block;
+	padding: 10px 16px;
+	margin: 10px -30px -43px;
+	text-align: right;
+}
+
+.home-featured .slide-excerpt .more-link::after {
+	-webkit-font-smoothing: antialiased;
+	content: "\f344";
+	display: inline-block;
+	font: normal 20px/1 'dashicons';
+	margin-left: 20px;
+	vertical-align: middle;
+}
+
+.home-featured #genesis-responsive-slider .more-link:hover {
+	background-color: #FA9581;
+	color: #fff;
+}
 
 /* Entries
 --------------------------------------------- */
