@@ -37,22 +37,22 @@ function anahita_home_genesis_meta() {
 function anahita_homepage_widgets() {
 
   genesis_widget_area( 'home-featured', array(
-    'before' => '<div class="home-featured widget-area">',
+    'before' => '<div class="home-featured home-odd widget-area">',
     'after'  => '</div>',
   ) );
 
   genesis_widget_area( 'home-top', array(
-    'before' => '<div class="home-top widget-area"><div class="wrap">',
+    'before' => '<div class="home-top home-even widget-area"><div class="wrap">',
     'after'  => '</div></div>',
   ) );
   /*
   genesis_widget_area( 'home-middle', array(
-    'before' => '<div class="home-middle widget-area"><div class="wrap">',
+    'before' => '<div class="home-middle home-odd widget-area"><div class="wrap">',
     'after'  => '</div></div>',
   ) );
 
   genesis_widget_area( 'home-bottom', array(
-    'before' => '<div class="home-bottom widget-area"><div class="wrap">',
+    'before' => '<div class="home-bottom home-even widget-area"><div class="wrap">',
     'after'  => '</div></div>',
   ) );
   */
