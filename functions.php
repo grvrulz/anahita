@@ -90,3 +90,18 @@ genesis_register_sidebar( array(
 	'name'        => __( 'Home Page featured', 'anahita' ),
 	'description' => __( 'This is the Home Page featured area', 'anahita' ),
 ) );
+
+genesis_register_sidebar( array(
+	'id'          => 'home-top',
+	'name'        => __( 'Home Page top', 'anahita' ),
+	'description' => __( 'This is the Home Page top area', 'anahita' ),
+) );
+
+remove_action( 'genesis_entry_header', 'genesis_post_info', 12);
+add_action( 'genesis_entry_header', 'genesis_post_info', 4);
+
+//add_filter( 'genesis_post_info', 'anahita_post_info');
+function anahita_post_info($filtered) {
+	$filtered = '[post_date format="M d, Y"] ' . __( 'by', 'anahita' ) . ' [post_author_posts_link] [post_comments] [post_edit]';
+	return $filtered;
+}

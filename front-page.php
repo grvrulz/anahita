@@ -41,11 +41,11 @@ function anahita_homepage_widgets() {
     'after'  => '</div>',
   ) );
 
-  /*genesis_widget_area( 'home-top', array(
+  genesis_widget_area( 'home-top', array(
     'before' => '<div class="home-top widget-area"><div class="wrap">',
     'after'  => '</div></div>',
   ) );
-
+  /*
   genesis_widget_area( 'home-middle', array(
     'before' => '<div class="home-middle widget-area"><div class="wrap">',
     'after'  => '</div></div>',
