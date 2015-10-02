@@ -1126,14 +1126,17 @@ html > body.anahita-home .slide-excerpt-border {
 --------------------------------------------- */
 
 .home-featured {
+	background: #fff;
 	position: relative;
 	text-align: center;
 	z-index: 9;
+	border-bottom: 3px solid #e7e7e7;
+	padding: 40px 0;
 }
 
 .home-featured .widget {
 	padding: 40px 40px 0;
-	margin: 40px auto 0;
+	margin: 0 auto;
 	max-width: 1600px;
 }
 
@@ -1238,7 +1241,10 @@ p.entry-meta {
 }
 
 .entry-categories::before,
-.entry-tags::before {
+.entry-tags::before,
+.entry-time::before,
+.entry-author::before,
+.entry-comments-link::before {
 	display: inline-block;
 	font: normal 20px/1 'dashicons';
 	margin-right: 5px;
@@ -1255,9 +1261,15 @@ p.entry-meta {
 	content: "\f323";
 }
 
+.entry-time::before {
+	content: "\f508";
+}
+.entry-author::before {
+	content: "\f338";
+}
+
 .entry-comments-link::before {
-	content: "\2014";
-	margin: 0 6px 0 2px;
+	content: "\f101";
 }
 
 /* Pagination
