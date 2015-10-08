@@ -921,9 +921,9 @@ html > body.anahita-home .slide-excerpt-border {
 
 .header-image .site-title > a {
 	background-position: center center !important;
-	background-size: 300px 57px !important;
+	background-size: 300px 64px !important;
 	float: left;
-	min-height: 57px;
+	min-height: 64px;
 	width: 100%;
 }
 
@@ -1533,10 +1533,6 @@ p.form-submit,
 
 	.title-area {
 		text-align: center;
-	}
-
-	.header-image .site-title > a {
-		width: 300px;
 	}
 
 	.site-description {

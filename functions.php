@@ -37,7 +37,7 @@ add_theme_support( 'genesis-structural-wraps', array(
 //* Add support for custom header
 add_theme_support( 'custom-header', array(
 	'width'           => 600,
-	'height'          => 114,
+	'height'          => 128,
 	'header-selector' => '.site-title a',
 	'header-text'     => false,
 	'flex-height'     => true,
