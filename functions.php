@@ -98,10 +98,10 @@ genesis_register_sidebar( array(
 ) );
 
 remove_action( 'genesis_entry_header', 'genesis_post_info', 12);
-add_action( 'genesis_entry_header', 'genesis_post_info', 4);
+add_action( 'genesis_entry_header', 'genesis_post_info', 6);
 
-//add_filter( 'genesis_post_info', 'anahita_post_info');
+add_filter( 'genesis_post_info', 'anahita_post_info');
 function anahita_post_info($filtered) {
-	$filtered = '[post_date format="M d, Y"] ' . __( 'by', 'anahita' ) . ' [post_author_posts_link] [post_comments] [post_edit]';
+	$filtered = '[post_author_posts_link] [post_date format="M d, Y"] [post_comments] [post_edit]';
 	return $filtered;
 }

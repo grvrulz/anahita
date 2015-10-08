@@ -1184,6 +1184,11 @@ html > body.anahita-home .slide-excerpt-border {
 	color: #fff;
 }
 
+.home-top .entry {
+	text-align: center;
+
+}
+
 /* Entries
 --------------------------------------------- */
 
@@ -1234,7 +1239,7 @@ p.entry-meta {
 }
 
 .entry-header .entry-meta {
-	margin-bottom: 24px;
+	margin-bottom: 12px;
 	margin-top: -10px;
 }
 
@@ -1254,9 +1259,9 @@ p.entry-meta {
 .entry-author::before,
 .entry-comments-link::before {
 	display: inline-block;
-	font: normal 20px/1 'dashicons';
+	font: normal 18px/1 'dashicons';
 	margin-right: 5px;
-	margin-top: 2px;
+	margin-top: 4px;
 	vertical-align: top;
 	-webkit-font-smoothing: antialiased;
 }
@@ -1278,6 +1283,13 @@ p.entry-meta {
 
 .entry-comments-link::before {
 	content: "\f101";
+}
+
+.entry-time::after,
+.entry-author::after {
+	content: '/';
+	margin: 0 10px 0 16px;
+	opacity: 0.5;
 }
 
 /* Pagination
@@ -1716,6 +1728,18 @@ p.form-submit,
 		margin-left: 0;
 	}
 
+	.home-top .entry {
+		width: 48.717948717948715%;
+		float: left;
+		margin-left: 2.564102564102564%;
+		margin-bottom: 40px;
+	}
+
+	.home-top .entry:nth-child(2n) {
+		margin-left: 0;
+		clear: both;
+	}
+
 }
 
 @media only screen and (min-width: 1025px) {
@@ -1723,5 +1747,19 @@ p.form-submit,
 	.site-inner {
 		padding-left: 0;
 		padding-right: 0;
+	}
+
+	.home-top .entry,
+	.home-top .entry:nth-child(2n) {
+		width: 31.623931623931625%;
+		float: left;
+		margin-left: 2.564102564102564%;
+		margin-bottom: 40px;
+		clear: none;
+	}
+
+	.home-top .entry:nth-child(3n-4) {
+		margin-left: 0;
+		clear: both;
 	}
 }
