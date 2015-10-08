@@ -18,15 +18,6 @@ function anahita_home_genesis_meta() {
 
     }
 
-    //* Force full width content layout
-    add_filter( 'genesis_pre_get_option_site_layout', '__genesis_return_full_width_content' );
-
-    //* Remove breadcrumbs
-    remove_action( 'genesis_before_loop', 'genesis_do_breadcrumbs');
-
-    //* Remove the default Genesis loop
-    remove_action( 'genesis_loop', 'genesis_do_loop' );
-
     //* Add homepage widgets
     add_action( 'genesis_after_header', 'anahita_homepage_widgets' );
 
@@ -40,22 +31,6 @@ function anahita_homepage_widgets() {
     'before' => '<div class="home-featured home-odd widget-area">',
     'after'  => '</div>',
   ) );
-
-  genesis_widget_area( 'home-top', array(
-    'before' => '<div class="home-top home-even widget-area"><div class="wrap">',
-    'after'  => '</div></div>',
-  ) );
-  /*
-  genesis_widget_area( 'home-middle', array(
-    'before' => '<div class="home-middle home-odd widget-area"><div class="wrap">',
-    'after'  => '</div></div>',
-  ) );
-
-  genesis_widget_area( 'home-bottom', array(
-    'before' => '<div class="home-bottom home-even widget-area"><div class="wrap">',
-    'after'  => '</div></div>',
-  ) );
-  */
 
 }
 

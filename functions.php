@@ -91,12 +91,6 @@ genesis_register_sidebar( array(
 	'description' => __( 'This is the Home Page featured area', 'anahita' ),
 ) );
 
-genesis_register_sidebar( array(
-	'id'          => 'home-top',
-	'name'        => __( 'Home Page top', 'anahita' ),
-	'description' => __( 'This is the Home Page top area', 'anahita' ),
-) );
-
 remove_action( 'genesis_entry_header', 'genesis_post_info', 12);
 add_action( 'genesis_entry_header', 'genesis_post_info', 6);
 
