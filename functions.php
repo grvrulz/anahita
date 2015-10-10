@@ -100,3 +100,9 @@ function anahita_post_info($filtered) {
 	$filtered = '[post_author_posts_link] [post_date format="M d, Y"] [post_comments] [post_edit]';
 	return $filtered;
 }
+
+add_filter('excerpt_more', 'get_read_more_link');
+add_filter( 'the_content_more_link', 'get_read_more_link' );
+function get_read_more_link() {
+return '…&nbsp;<a href="' . get_permalink() . '">'. __( 'Read More…', 'anahita' ) .'</a>';
+}
