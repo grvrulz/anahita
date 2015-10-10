@@ -1143,13 +1143,9 @@ html > body.anahita-home .slide-excerpt-border {
 }
 
 .home-featured .widget {
-	padding: 40px 40px 0;
+	padding: 40px 0 0;
 	margin: 0 auto;
-	max-width: 1600px;
-}
-
-.home-featured .widget:last-of-type {
-	padding-bottom: 80px;
+	max-width: 1200px;
 }
 
 .anahita-home .home-featured .widget.genesis_responsive_slider {
@@ -1184,9 +1180,43 @@ html > body.anahita-home .slide-excerpt-border {
 	color: #fff;
 }
 
-.home-top .entry {
-	text-align: center;
+.home-featured .featured-content .entry {
+	padding: 0;
+	border: none;
+	overflow: hidden;
+	position: relative;
+}
 
+.home-featured .featured-content img.entry-image {
+	border-radius: 8px;
+	border: 3px solid #e7e7e7;
+}
+
+.home-featured .featured-content .alignleft img.entry-image {
+	margin-right: 30px;
+}
+
+.home-featured .featured-content .entry-header {
+	margin-top: 15px;
+	text-align: left;
+}
+
+.home-featured .featured-content .entry-content {
+	text-align: left;
+}
+
+.home-featured .featured-content .more-link {
+	display: block;
+	padding: 15px 0 10px;
+	text-align: right;
+}
+
+.home-featured .featured-content .more-link::after {
+	content: "\f344";
+	font: normal 16px/1 'dashicons';
+	height: 16px;
+	vertical-align: middle;
+	margin-left: 6px;
 }
 
 /* Entries
