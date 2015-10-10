@@ -83,6 +83,7 @@ remove_action( 'wp_head', 'genesis_load_favicon' );
 
 //* Image sizes
 add_image_size('featured', 694, 400, true);
+add_image_size('home-featured', 1200, 400, true);
 
 //* Register widget areas
 genesis_register_sidebar( array(
