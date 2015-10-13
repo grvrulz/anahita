@@ -92,6 +92,15 @@ genesis_register_sidebar( array(
 	'description' => __( 'This is the Home Page featured area', 'anahita' ),
 ) );
 
+
+//* Display Featured Image on single post
+add_action( 'genesis_entry_header', 'anahita_featured_post_image', 16 );
+function anahita_featured_post_image() {
+  if ( ! is_singular( 'post' ) )  return;
+	the_post_thumbnail('post-image');
+}
+
+//* Move post info above title
 remove_action( 'genesis_entry_header', 'genesis_post_info', 12);
 add_action( 'genesis_entry_header', 'genesis_post_info', 6);
 
