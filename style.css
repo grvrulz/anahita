@@ -521,13 +521,14 @@ th {
 .archive-description,
 .author-box {
 	border-bottom: 5px solid #f5f5f5;
-	margin-bottom: 60px;
 	padding-bottom: 30px;
 }
 
 .single .author-box {
-	border-top: 5px solid #f5f5f5;
-	padding-top: 30px;
+	border: 3px solid #e7e7e7;
+	background: #fafafa;
+	padding: 30px;
+	border-radius: 8px;
 }
 
 .author-box-title {
