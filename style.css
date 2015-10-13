@@ -1477,7 +1477,7 @@ p.form-submit,
 }
 
 .footer-widgets li {
-	border-bottom: 1px dotted #666;
+	border-bottom: 1px dotted #fff;
 	margin-bottom: 10px;
 	padding-bottom: 10px;
 }
