@@ -1,9 +1,9 @@
 <?php
 /**
- * This file adds the Landing page template to the Mobile First Theme.
+ * This file adds the Landing page template to the theme.
  *
  * @author Brian Gardner
- * @package Mobile First Theme
+ * @package Center Theme
  * @subpackage Customizations
  */
 
@@ -12,10 +12,10 @@ Template Name: Landing
 */
 
 //* Add landing body class to the head
-add_filter( 'body_class', 'mobile_first_add_body_class' );
-function mobile_first_add_body_class( $classes ) {
+add_filter( 'body_class', 'center_add_body_class' );
+function center_add_body_class( $classes ) {
 
-	$classes[] = 'mobile-first-landing';
+	$classes[] = 'center-landing';
 	return $classes;
 
 }
