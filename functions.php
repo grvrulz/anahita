@@ -2,6 +2,9 @@
 //* Start the engine
 include_once( get_template_directory() . '/lib/init.php' );
 
+//* Setup Theme
+include_once( get_stylesheet_directory() . '/lib/theme-defaults.php' );
+
 //* Child theme (do not remove)
 define( 'CHILD_THEME_NAME', 'Anahita' );
 define( 'CHILD_THEME_URL', 'http://magikpress.com/themes/anahita' );
