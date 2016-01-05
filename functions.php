@@ -126,7 +126,7 @@ add_theme_support( 'post-formats', array(
 ) );
 
 //* Move around things for different post formats
-add_action( 'genesis_before_entry', 'anahita_post_format_stuff' );
+//add_action( 'genesis_before_entry', 'anahita_post_format_stuff' );
 function anahita_post_format_stuff() {
 	//* get the post format
 	$post_format = get_post_format( get_the_ID() );
