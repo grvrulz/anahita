@@ -129,11 +129,10 @@ add_theme_support( 'post-formats', array(
 add_action( 'genesis_before_entry', 'anahita_post_format_stuff' );
 function anahita_post_format_stuff() {
 	//* get the post format
-	$post_format = get_post_format();
+	$post_format = get_post_format( get_the_ID() );
 	//* remove the entry header based on the post format
 	switch( $post_format ) {
-		case 'quote':
-			//* remove the entry header.  See Genesis/lib/structure/post.php
+		case "quote":
 			remove_action( 'genesis_entry_header', 'genesis_do_post_format_image', 4 );
 			remove_action( 'genesis_entry_header', 'genesis_entry_header_markup_open', 5 );
 			remove_action( 'genesis_entry_header', 'genesis_entry_header_markup_close', 15 );
