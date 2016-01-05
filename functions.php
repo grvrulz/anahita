@@ -140,5 +140,13 @@ function anahita_post_format_stuff() {
 		add_action( 'genesis_entry_footer', 'genesis_do_post_title', 6);
 		add_action( 'genesis_entry_footer', 'genesis_post_info', 7);
 		echo '<script>console.log("'.get_the_ID().'")</script>';
+	} else {
+		add_action( 'genesis_entry_header', 'genesis_do_post_format_image', 4 );
+		add_action( 'genesis_entry_header', 'genesis_entry_header_markup_open', 5 );
+		add_action( 'genesis_entry_header', 'genesis_entry_header_markup_close', 15 );
+		add_action( 'genesis_entry_header', 'genesis_do_post_title' );
+		add_action( 'genesis_entry_header', 'genesis_post_info', 6 );
+		remove_action( 'genesis_entry_footer', 'genesis_do_post_title', 6);
+		remove_action( 'genesis_entry_footer', 'genesis_post_info', 7);
 	}
 }
