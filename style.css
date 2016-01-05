@@ -1265,6 +1265,14 @@ html > body.anahita-home .slide-excerpt-border {
 	color: #f4f4f4;
 }
 
+/* Post Format
+--------------------------------------------- */
+
+.format-quote .entry-content {
+	font-style: italic;
+	font-size: 24px;
+}
+
 /* Entry Meta
 --------------------------------------------- */
 
