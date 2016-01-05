@@ -99,7 +99,7 @@ genesis_register_sidebar( array(
 //* Display Featured Image on single post
 add_action( 'genesis_entry_header', 'anahita_featured_post_image', 16 );
 function anahita_featured_post_image() {
-	if ( ! is_singular( 'post' ) )  {
+	if ( !is_single() || is_archive() || is_home() )  {
 		return;
 	}
 	if( has_post_thumbnail() ) {
