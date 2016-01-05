@@ -81,11 +81,6 @@ function mobile_first_comments_gravatar( $args ) {
 //* Add support for 3-column footer widgets
 add_theme_support( 'genesis-footer-widgets', 3 );
 
-//* Add theme support for post formats
-add_theme_support( 'post-formats', array(
-	'quote',
-) );
-
 //* Remove Genesis site favicon
 remove_action( 'wp_head', 'genesis_load_favicon' );
 
@@ -122,4 +117,33 @@ add_filter('excerpt_more', 'get_read_more_link');
 add_filter( 'the_content_more_link', 'get_read_more_link' );
 function get_read_more_link() {
 return '…&nbsp;<a href="' . get_permalink() . '">'. __( 'Read More…', 'anahita' ) .'</a>';
+}
+
+
+//* Add theme support for post formats
+add_theme_support( 'post-formats', array(
+	'quote',
+) );
+
+//* Move around things for different post formats
+add_action( 'genesis_before_entry', 'anahita_post_format_stuff' );
+function anahita_post_format_stuff() {
+	//* get the post format
+	$post_format = get_post_format();
+	//* remove the entry header based on the post format
+	switch( $post_format ) {
+		case 'quote':
+		case 'audio':
+			//* remove the entry header.  See Genesis/lib/structure/post.php
+			remove_action( 'genesis_entry_header', 'genesis_do_post_format_image', 4 );
+			remove_action( 'genesis_entry_header', 'genesis_entry_header_markup_open', 5 );
+			remove_action( 'genesis_entry_header', 'genesis_entry_header_markup_close', 15 );
+			remove_action( 'genesis_entry_header', 'genesis_do_post_title' );
+			remove_action( 'genesis_entry_header', 'genesis_post_info', 12 );
+			add_action( 'genesis_entry_footer', 'genesis_do_post_title', 6);
+			add_action( 'genesis_entry_footer', 'genesis_post_info', 7);
+			break;
+		default:
+			break;
+	}
 }
