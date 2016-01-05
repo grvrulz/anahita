@@ -139,5 +139,6 @@ function anahita_post_format_stuff() {
 		remove_action( 'genesis_entry_header', 'genesis_post_info', 6 );
 		add_action( 'genesis_entry_footer', 'genesis_do_post_title', 6);
 		add_action( 'genesis_entry_footer', 'genesis_post_info', 7);
+		echo '<script>console.log('.$post_format.')</script>';
 	}
 }
