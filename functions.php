@@ -133,13 +133,12 @@ function anahita_post_format_stuff() {
 	//* remove the entry header based on the post format
 	switch( $post_format ) {
 		case 'quote':
-		case 'audio':
 			//* remove the entry header.  See Genesis/lib/structure/post.php
 			remove_action( 'genesis_entry_header', 'genesis_do_post_format_image', 4 );
 			remove_action( 'genesis_entry_header', 'genesis_entry_header_markup_open', 5 );
 			remove_action( 'genesis_entry_header', 'genesis_entry_header_markup_close', 15 );
 			remove_action( 'genesis_entry_header', 'genesis_do_post_title' );
-			remove_action( 'genesis_entry_header', 'genesis_post_info', 12 );
+			remove_action( 'genesis_entry_header', 'genesis_post_info', 6 );
 			add_action( 'genesis_entry_footer', 'genesis_do_post_title', 6);
 			add_action( 'genesis_entry_footer', 'genesis_post_info', 7);
 			break;
